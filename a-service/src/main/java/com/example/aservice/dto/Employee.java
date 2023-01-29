@@ -1,15 +1,18 @@
-package com.example.bservice.dto;
+package com.example.aservice.dto;
 
-public class Employee {
+public class Employee{
+
 	private int empNum;
 	private int empId;
 	private String empName;
+	private int empSalary;
 	public Employee() {}
-	public Employee(int empNum, int empId, String empName) {
+	public Employee(int empNum, int empId, String empName, int empSalary) {
 		super();
 		this.empNum = empNum;
 		this.empId = empId;
 		this.empName = empName;
+		this.empSalary = empSalary;
 	}
 	public int getEmpNum() {
 		return empNum;
@@ -28,5 +31,11 @@ public class Employee {
 	}
 	public void setEmpName(String empName) {
 		this.empName = empName;
+	}
+	public int getEmpSalary() {
+		return empSalary;
+	}
+	public void setEmpSalary(int empSalary) {
+		this.empSalary = empSalary;
 	}
 }
